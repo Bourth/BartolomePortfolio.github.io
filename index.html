@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styleportfolio.css">
+  <title>BC PORTFOLIO</title>
+</head>
+
+<body>
+  <div class="Landing">
+    <div class="opacite"></div>
+    <video src="RondGlitch.mp4"
+    type="video/mp4"
+    autoplay loop
+    muted
+    class="bruit">
+    </video>
+  </div>
+
+  <main>
+    <ul class="project">
+      <li id="un"> <a href="ProjetOrsay.html"> Musée d'Orsay </a>
+      </li>
+      <li id="deux">
+        <a href="Chatroom.html">ChatRoom</a>
+      </li>
+      <li id="trois" class="neon">
+        <a href="Neon.html">Neon</a>
+      </li>
+      <li id="quatre">
+        CathodicGlitch
+      </li>
+      <li id="cinq">
+        Dataviz
+      </li>
+      <li id="six">
+        Blender
+      </li>
+      <li id="sept">
+        <a href="Vidéo.html">Vidéo</a>
+      </li>
+    </ul>
+
+  </main>
+
+  <header>
+
+    <ul class="nav">
+      <li>
+        <a onclick="showMenu()" class="onglet one">projets</a>
+      </li>
+      <li>
+        <a class="onglet two">about</a>
+      </li>
+    </ul>
+
+  </header>
+
+
+<script>
+const menu = document.querySelector('main');
+function showMenu(){
+  menu.classList.toggle('mainopen');
+}
+menu.onclick = function(){
+  showMenu();
+}
+
+</script>
+
+</html>
